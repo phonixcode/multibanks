@@ -63,6 +63,9 @@ project/
 ├── tests/
 │   ├── BankTest.php
 │
+├── examples/
+│   ├── bank_interaction.php
+│
 └── composer.json
 ```
 
@@ -76,6 +79,7 @@ In this structure:
 - `tests/`: This directory contains all the unit tests for this project.
 
      - `BankTest.php`: PHPUnit test cases for testing the functionality of the banks and the bank factory.
-- composer.json: The Composer configuration file is for managing dependencies and autoloading.
+- `examples/`: This directory contains the file `bank_interaction.php`, which demonstrates how to interact with the banks using the BankFactory.
+- `composer.json`: The Composer configuration file is for managing dependencies and autoloading.
 
 

@@ -8,7 +8,7 @@ class AccessBank implements BankInterface {
         // Assuming the verification process involves some logic
 
         // Simulated verification logic
-        if ($payload['account_number'] === 'valid_account_number') {
+        if ($payload['account_number'] === '1357924680') {
             return true; // Account number is valid
         } else {
             return false; // Account number is invalid

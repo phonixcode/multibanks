@@ -10,7 +10,7 @@ class BankTest extends TestCase {
         $bankFactory = BankFactory::createBank('gtbank');
         
         // Verify account number
-        $verifyPayload = ['account_number' => 'valid_account_number'];
+        $verifyPayload = ['account_number' => '1234567890'];
         $verifyResult = $bankFactory->verifyAccountNumber($verifyPayload);
         
         // Assert that the account verification was successful
@@ -29,7 +29,7 @@ class BankTest extends TestCase {
         $bankFactory = BankFactory::createBank('zenithbank');
         
         // Verify account number
-        $verifyPayload = ['account_number' => 'valid_account_number'];
+        $verifyPayload = ['account_number' => '0987654321'];
         $verifyResult = $bankFactory->verifyAccountNumber($verifyPayload);
         
         // Assert that the account verification was successful
@@ -48,7 +48,7 @@ class BankTest extends TestCase {
         $bankFactory = BankFactory::createBank('accessbank');
         
         // Verify account number
-        $verifyPayload = ['account_number' => 'valid_account_number'];
+        $verifyPayload = ['account_number' => '1357924680'];
         $verifyResult = $bankFactory->verifyAccountNumber($verifyPayload);
         
         // Assert that the account verification was successful
